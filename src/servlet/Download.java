@@ -83,7 +83,7 @@ public class Download {
 			e.printStackTrace();
 		}
 		
-		//2.计算文件分块数(加点东西)
+		//2.计算文件分块数
 		blockSize = fileLength / threadCount;
 		//开启对应数量的线程
 		for(int i=0;i<threadCount;i++) {
